@@ -1,0 +1,345 @@
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    /* display: flex; */
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 20px;
+
+}
+
+h2 {
+   
+    font-family: "宋体", Arial, sans-serif;
+    font-size: 32px;
+    color: rgb(49, 49, 51);
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 32px;
+}
+  
+ 
+  p {
+    text-align: center;
+    color:black;
+    margin: -21px 0;
+}
+
+
+
+  /* 主要内容区域样式 */
+  .calculator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* 让子元素高度一致 */
+   
+    margin-top: 95px;
+    flex-wrap: wrap;
+}
+
+.calculator-card {
+    
+ 
+    width: 49%;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* 子元素垂直排列 */
+}
+
+
+ .card-header {
+    padding: 20px;
+    height: 140px;
+    width: 100%;
+    background-size: cover;
+}
+
+.pp {
+    background-image: url("./img/背景_参加计划.png");
+    color: white;
+}
+
+.lk {
+    background-image: url("./img/背景_不参加计划.png");
+    color: black;
+}
+
+/* 设置 "参加个人养老金计划" 的文字颜色 */
+.pp .text h3 {
+    color: #ffecca;
+}
+.pp .text p {
+    color: #ffecca;
+}
+
+/* 设置 "不参加个人养老金计划" 的文字颜色 */
+.lk .text h3 {
+    color: #667ba2;
+}
+.lk .text p {
+    color: #667ba2;
+}
+
+/* 图标样式 */
+.icon {
+    width: 51px;
+    height: 51px;
+    margin-right: 10px; /* 图标与文字之间的间距 */
+}
+
+/* 标题与图标的容器 */
+.header-content {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+}
+
+/* 文字部分 */
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card-details {
+    flex:1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: black;
+    min-height: 200px;
+}
+
+.calculator-card h3 {
+    font-size: 18px;
+    color: inherit;
+    margin: 0 0 10px;
+}
+
+.calculator-card p {
+    text-align: left;
+    color: black;
+    margin: -1px 0;
+}
+
+/* 定义结果区域的布局 */
+.result {
+    display: flex;
+    flex-direction: column; /* 垂直排列：文字在上，数字在下 */
+    align-items: flex-start; /* 左对齐 */
+    margin: 10px 0;
+}
+
+/* 文字部分 */
+.labels {
+    display: flex;
+    justify-content: space-between; /* 文字之间均匀分布 */
+    width: 100%; /* 确保宽度一致 */
+    font-size: 14px; /* 调整字体大小 */
+    color: white; /* 设置文字颜色 */
+    margin-bottom: 5px; /* 上下间距 */
+}
+
+/* 数字部分（第二行） */
+.result .values {
+    display: flex;
+    justify-content: space-between; /* 数字之间均匀分布 */
+    width: 100%; /* 确保宽度一致 */
+  
+    
+}
+
+/* 参加个人养老计划部分的文字颜色 */
+.pp .labels span {
+    color: white; 
+}
+
+.pp .values span {
+    color: white; 
+    font-size: 40px;
+}
+
+/* 不参加个人养老金计划部分的文字颜色 */
+.lk .labels span {
+    color: #666; 
+}
+
+.lk .values span {
+    color: black; 
+    font-size: 40px;
+}
+
+/* 单个标签项 */
+.label-item,
+.value-item {
+    text-align: left; /* 左对齐 */
+    min-width: 45%; /* 确保每个标签占据一定的宽度 */
+}
+
+/* 用于增加间距的占位符 */
+.spacer {
+    width: 20px; /* 设置间距宽度 */
+}
+
+/* 单独的计算框样式 */
+.calculation-box {
+    background-color: #c5c9c545;/* 设置背景颜色 */
+    color: white; /* 设置文字颜色为白色 */
+    padding: 10px; /* 内边距 */
+    border-radius: 0px; /* 圆角效果 */
+    margin: 10px 0; /* 上下间距 */
+    font-size: 16px; /* 字体大小 */
+    text-align: center; /* 文字居中对齐 */
+}
+
+.calculation-box2 {
+    background-color: #c5c9c545; /* 设置背景颜色 */
+    color: white; /* 设置文字颜色为白色 */
+    padding: 10px; /* 内边距 */
+    border-radius: 0px; /* 圆角效果 */
+    margin: 10px 0; /* 上下间距 */
+    font-size: 16px; /* 字体大小 */
+    text-align: center; /* 文字居中对齐 */
+}
+
+/* 横线下方的样式 */
+.line-below {
+    border-bottom: 1px solid #ccc; /* 添加一条浅灰色横线 */
+    padding-bottom: 15px; /* 横线与文字之间的间距 */
+    margin-bottom: 12px; /* 横线与下方内容之间的间距 */
+}
+
+.line-below p {
+    margin: 0; /* 移除段落的默认外边距，避免额外间距 */
+}
+
+/* 将数字放置在行末 */
+.card-details p {
+    display: flex;
+    justify-content: space-between; /* 文字和数字分布在两端 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: 5px 0; /* 段落间距 */
+}
+
+.highlight-end {
+    color: #007bff; /* 设置数字颜色 */
+    font-weight: bold; /* 加粗显示 */
+    font-size: 20px;
+}
+
+.result span {
+    font-size: 15px;
+    color: #666;
+}
+.highlight {
+    color: #007bff;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    
+}
+
+.disclaimer p {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.calculate-button {
+    display: block;
+    width: 320px;
+    padding: 10px;
+    background-color: #2a6cdd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 21px auto 0;
+    text-align: center;
+
+}
+
+.calculate-button:hover {
+    background-color: #0056b3;
+}
+
+.calculation-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item {    /*文字 */
+    display:flex;
+    justify-content: space-between; /* 文字之间均匀分布 */
+    width: 168px; /* 确保宽度一致 */
+    font-size: 14px; /* 调整字体大小 */
+    color: #87896eb3; /* 设置文字颜色 */
+    margin-bottom: 5px; /* 上下间距 */
+  }
+  
+  .value {
+    text-align: right;
+    color: black;
+    font-size: 28px; /* 确保宽度一致 */
+    
+  }
+  
+  .operator {
+    font-size: 26px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+    color: black;
+  }
+
+
+  .row2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item2 {    /*文字 */
+    display:flex;
+    justify-content: space-between; /* 文字之间均匀分布 */
+    width: 168px; /* 确保宽度一致 */
+    font-size: 14px; /* 调整字体大小 */
+    color: #87896eb3; /* 设置文字颜色 */
+    margin-bottom: 5px; /* 上下间距 */
+  }
+  
+  .value2 {
+    text-align: right;
+    color: black;
+    font-size: 28px; /* 确保宽度一致 */
+    
+  }
+  
+  .operator2 {
+    font-size: 26px;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+    color: black;
+  }
+
+    
