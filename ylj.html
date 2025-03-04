@@ -27,8 +27,6 @@
             color: rgb(49, 49, 51);
             letter-spacing: 4px;
             position: relative;
-            padding-top: 12px;
-            margin-bottom: -8px;
         }
         
 
@@ -36,36 +34,33 @@
         .title::after {
             content: '';
             position: absolute;
-            top: 50%;
+            top: 23%;
             width: 20px;
             height: 2px;
-            background-color: rgb(49, 49, 51);
         }
 
         .title::before {
-            left: 430px; /* 调整左边横线的位置 */
-            /* text-align: center; */
+            left: 430px; 
             margin-top: 10px;
             
         }
 
         .title::after {
-            right: 430px; /* 调整右边横线的位置 */
+            right: 430px;
             margin-top: 9px;
         }
 
         p {
             text-align: center;
             color: #313133;
-            font-size: 12px;
-            /* margin: 0px; */
+            font-size: 14px;
         }
 
         .se-container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
         .image {
@@ -80,11 +75,12 @@
 
         .form-container {
             width: 710px;
-            height:628px;
+            height:588px;
             background-color: #fff;
             padding-left: 88px;
             border: 1px solid #ddd;
             /* margin-left: 10px; */
+            padding-top: 40px;
         }
 
         .form-container h2 {
@@ -94,7 +90,7 @@
         }
 
         .form-group {
-            margin-bottom: 25px;
+            padding-bottom: 25px;
             display: flex;
             align-items: center;
         }
@@ -104,10 +100,11 @@
             font-size: 15px;
             color: #070707;
             line-height: 24px;
-            /* text-align:; */
             margin-right: 16px;
             margin-left: 80px;
-            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            height: 48px;
         }
         
 
@@ -121,12 +118,11 @@
             outline: none;
             font-size: 16px;
             line-height: 24px;
-            color: #b1abab;
+            color: black;
         }
 
         /* 单独设置每个输入框的宽度 */
         #age {
-            margin-top: 22px;
             width: 300px;
             height: 30px;
         }
@@ -134,55 +130,45 @@
         #retirement-age {
             width: 320px;
             height: 50px;
-            margin-top: 15px;
             color: black;
         }
 
         #income {
             width: 300px;
             height: 34px;
-            margin-top: -10px;
-            color: rgb(207, 204, 204);
+            color: black;
         }
 
         #tax-rate {
             width: 322px;
             height: 50px;
-            margin-top: -10px;
             margin-left: 0px;
-            color: rgb(207, 204, 204);
+            color: black;
         }
 
         #investment {
             width: 304px;
             height: 35px;
-            margin-top: -8px;
         }
 
         #rate-of-return {
             width: 323px;
             height: 46px;
             color: black;
-            margin: 22px 0px 15px 0px;
+            margin: 0;
         }
 
-        .under-1 {
-            font-size: 14px;
-            color: #b3b1b1;
-            line-height: 0;
-            padding-top: 0px;
-            text-align: left;
-            padding-left: 135px;
+        .investment-input-container {
+            position: relative;
         }
-        
-        .under-2 {
+
+        .investment-input-container::after {
+            content: '养老金存入限额要求，最高不超过12000元';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
             font-size: 14px;
             color: #b3b1b1;
-            line-height: 0;
-            /* padding-top: 0px; */
-            text-align: left;
-            margin-left: 135px;
-            margin-top: -15px;
         }
 
         .calculate-button {
@@ -190,39 +176,54 @@
             width: 323px;
             height: 52px;
             padding: 10px;
-            background-color: #99b5f3;
+            background-color: #0056b3;
             color: #fff;
             border: none;
             /* cursor: pointer; */
             font-size: 17px;
             margin: 20px 0px 0px 273px;
         }
-
-        .calculate-button:hover {
-            background-color: #0056b3;
-        }
-
-        footer {
+        /* footer {
             width: 100%;
             color: #b1abab;
-            /* padding: 20px; */
-            /* margin-top: 20px; */
-        }
-
+        } */
         .p1 {
             text-align: left;
-            line-height: 0.6;
+            line-height: 6px;
             font-size: 12px;
             color: #999;
-            padding: 10px 0px -1px 0px;
         }
         .p2 {
             text-align: left;
-            line-height: 1;
+            /* line-height: 1; */
             font-size: 12px;
             color: #999;
             margin-top: 26px;
             
+        }
+
+        .age-input-container {
+            position: relative;
+        }
+
+        .age-input-container::after {
+            content: '有效年龄范围18～65周岁';
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            font-size: 14px;
+            color: #b3b1b1;
+        }
+
+        /* 隐藏输入框的上下箭头 */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield; /* Firefox */
         }
 
     </style>
@@ -230,7 +231,7 @@
 
 <body>
     <div class="container">
-        <h2 class="title">个人养老金计算器</h2>
+        <h2 class="title">-个人养老金计算器-</h2>
         <p>算一算，体面养老需要多少钱？</p>
         <div class="se-container">
             <div class="image">
@@ -239,10 +240,9 @@
             <div class="form-container">
                 <div class="form-group">
                     <label>我的年龄（周岁）</label>
-                    <input type="text" id="age" placeholder="请输入我的年龄（周岁）">
-                </div>
-                <div class="under-1">
-                    <p class="under-1">有效年龄范围18～65周岁</p>
+                    <div class="age-input-container">
+                        <input type="text" id="age" placeholder="请输入我的年龄（周岁）">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>期望退休年龄（周岁）</label>
@@ -266,11 +266,10 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label >每年投资养老基金（元）</label>
-                    <input type="number" id="investment" placeholder="每年投资养老基金（元）">
-                </div>
-                <div class="under-2">
-                    <p class="under-2">养老金存入限额要求，最高不超过120000元</p>
+                    <label>每年投资养老基金（元）</label>
+                    <div class="investment-input-container">
+                        <input type="number" id="investment" placeholder="每年投资养老基金（元）">
+                    </div>
                 </div>
                 <div class="form-group">
                     <label>期望年化收益率</label>
@@ -280,7 +279,7 @@
                         <option>5.0%</option>
                     </select>
                 </div>
-                <button class="calculate-button">计算</button>
+                <button class="calculate-button" onclick="calculate()">计算</button>
             </div>
         </div>
         <footer>
@@ -298,13 +297,174 @@
             <p class="p1">
                 2、由于可能存在数据获取及同步问题，可能出现未能根据最新的税率政策及时更新算法条件，导致计算结果出现偏差。
             </p>
-            <p class="p1">
+            <!-- <p class="p1">
                 3、本服务提供的信息是广发证券根据官方公布的税率数据、您自行设置的数值、假设条件及相关算法自动计算得出，仅对相关数据进行客观展示，并非是对未来收入和收益的预测，不代表养老计划真实业绩或未来业绩预测，不构成
             </p>
             <p class="p1">任何投资建议，也不对投资收益进行任何保证和承诺。
-                无论是否使用本服务，您均应自主作出投资决策并独自承担投资风险。</p>
+                无论是否使用本服务，您均应自主作出投资决策并独自承担投资风险。</p> -->
         </footer>
     </div>
+    <script>
+        function calculate() {
+            // 获取用户输入的值
+            const age = parseInt(document.getElementById('age').value);
+            const retirementAge = parseInt(document.getElementById('retirement-age').value);
+            const income = parseFloat(document.getElementById('income').value);
+            const taxRateStr = document.getElementById('tax-rate').value;
+            const investment = parseFloat(document.getElementById('investment').value);
+            const rateOfReturnStr = document.getElementById('rate-of-return').value;
+            
+            // 处理税率和收益率（去掉百分号并转为小数）
+            const taxRate = parseFloat(taxRateStr) / 100 || 0;
+            const rateOfReturn = parseFloat(rateOfReturnStr) / 100 || 0;
+            
+            // 验证所有字段都已填写
+            if (!document.getElementById('age').value) {
+                alert('请输入您的年龄');
+                return;
+            }
+            
+            if (!document.getElementById('retirement-age').value) {
+                alert('请选择期望退休年龄');
+                return;
+            }
+            
+            if (!document.getElementById('income').value) {
+                alert('请输入当前税前年收入');
+                return;
+            }
+            
+            if (taxRateStr === '请选择') {
+                alert('请选择当前个人所得税最高税率');
+                return;
+            }
+            
+            if (!document.getElementById('investment').value) {
+                alert('请输入每年投资养老基金金额');
+                return;
+            }
+            
+            if (!document.getElementById('rate-of-return').value) {
+                alert('请选择期望年化收益率');
+                return;
+            }
+            
+            // 验证输入值的有效性
+            if (isNaN(age) || age < 18 || age > 65) {
+                alert('请输入有效的年龄（18-65周岁）');
+                return;
+            }
+            
+            if (isNaN(income) || income <= 0) {
+                alert('请输入有效的年收入');
+                return;
+            }
+            
+            if (isNaN(investment) || investment <= 0 || investment > 12000) {
+                alert('请输入有效的养老金投资金额（不超过12000元）');
+                return;
+            }
+            
+            // 计算投资年数
+            const investmentYears = retirementAge - age;
+            
+            // 参加个人养老金计划的计算
+            // 累计投入本金
+            const totalInvestment = investment * investmentYears;
+            
+            // 计算累计投资收益（复利）
+            let totalReturn = 0;
+            for (let i = 0; i < investmentYears; i++) {
+                totalReturn += investment * Math.pow(1 + rateOfReturn, investmentYears - i) - investment;
+            }
+            
+            // 账户累计金额
+            const totalAmount = totalInvestment + totalReturn;
+            
+            // 退休后一次性领取养老金，按照3%税率纳税
+            const afterTaxAmount = totalAmount * (1 - 0.03);
+            
+            // 每年节省的个税
+            const yearlyTaxSaving = investment * taxRate;
+            
+            // 累计节省个税
+            const totalTaxSaving = yearlyTaxSaving * investmentYears;
+            
+            // 不参加个人养老金计划的计算
+            // 扣税后的本金
+            const afterTaxInvestment = investment * (1 - taxRate);
+            
+            // 累计投入本金（不参加计划）
+            const totalAfterTaxInvestment = afterTaxInvestment * investmentYears;
+            
+            // 计算累计投资收益（不参加计划）
+            let totalAfterTaxReturn = 0;
+            for (let i = 0; i < investmentYears; i++) {
+                totalAfterTaxReturn += afterTaxInvestment * Math.pow(1 + rateOfReturn, investmentYears - i) - afterTaxInvestment;
+            }
+            
+            // 账户累计金额（不参加计划）
+            const totalAfterTaxAmount = totalAfterTaxInvestment + totalAfterTaxReturn;
+            
+            // 将计算结果存储在URL参数中
+            const params = new URLSearchParams();
+            params.append('age', age);
+            params.append('retirementAge', retirementAge);
+            params.append('income', income);
+            params.append('taxRate', taxRate);
+            params.append('investment', investment);
+            params.append('rateOfReturn', rateOfReturn);
+            params.append('totalInvestment', totalInvestment.toFixed(2));
+            params.append('totalReturn', totalReturn.toFixed(2));
+            params.append('totalAmount', totalAmount.toFixed(2));
+            params.append('afterTaxAmount', afterTaxAmount.toFixed(2));
+            params.append('yearlyTaxSaving', yearlyTaxSaving.toFixed(2));
+            params.append('totalTaxSaving', totalTaxSaving.toFixed(2));
+            params.append('afterTaxInvestment', afterTaxInvestment.toFixed(2));
+            params.append('totalAfterTaxInvestment', totalAfterTaxInvestment.toFixed(2));
+            params.append('totalAfterTaxReturn', totalAfterTaxReturn.toFixed(2));
+            params.append('totalAfterTaxAmount', totalAfterTaxAmount.toFixed(2));
+            
+            // 在当前页面跳转到结果页面
+            window.location.href = `yyylj.html?${params.toString()}`;
+        }
+
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const ageInput = document.getElementById('age');
+        //     const retirementAgeSelect = document.getElementById('retirement-age');
+        //     const incomeInput = document.getElementById('income');
+        //     const taxRateSelect = document.getElementById('tax-rate');
+        //     const investmentInput = document.getElementById('investment');
+        //     const rateOfReturnSelect = document.getElementById('rate-of-return');
+        //     const calculateButton = document.querySelector('.calculate-button');
+            
+        //     function checkAllFieldsFilled() {
+        //         const isTaxRateValid = taxRateSelect.value !== '请选择';
+                
+        //         if (ageInput.value && 
+        //             retirementAgeSelect.value && 
+        //             incomeInput.value && 
+        //             isTaxRateValid && 
+        //             investmentInput.value && 
+        //             rateOfReturnSelect.value) {
+        //             calculateButton.style.backgroundColor = '#0056b3';
+        //         } else {
+        //             calculateButton.style.backgroundColor = '#99b5f3';
+        //         }
+        //     }
+            
+        //     // 为每个输入字段添加事件监听器
+        //     ageInput.addEventListener('input', checkAllFieldsFilled);
+        //     retirementAgeSelect.addEventListener('change', checkAllFieldsFilled);
+        //     incomeInput.addEventListener('input', checkAllFieldsFilled);
+        //     taxRateSelect.addEventListener('change', checkAllFieldsFilled);
+        //     investmentInput.addEventListener('input', checkAllFieldsFilled);
+        //     rateOfReturnSelect.addEventListener('change', checkAllFieldsFilled);
+            
+        //     // 初始检查
+        //     checkAllFieldsFilled();
+        // });
+    </script>
 </body>
 
 </html>

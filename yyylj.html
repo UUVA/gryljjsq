@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
                         <img src="./img/参加计划.png" alt="参加计划图标" class="icon">
                         <div class="text">
                             <h3>参加个人养老金计划</h3>
-                            <p>到您 60 岁退休时</p>
+                            <p>到您 <span id="retirement-age-1">60</span> 岁退休时</p>
                         </div>
                     </div>
                     <div class="result">
@@ -30,35 +30,36 @@
                             <div class="label-item"><span>最终到手金额</span></div>
                         </div>
                         <div class="values">
-                            <div class="value-item"><span>269.98</span></div>
-                            <div class="value-item"><span>4,074.74</span></div>
+                            <div class="value-item"><span id="total-tax-saving">0.00</span></div>
+                            <div class="value-item"><span id="after-tax-amount">0.00</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="card-details az">
-                    <p>根据您自行设置的条件，按投资年化收益率 4% 计算得出从 58 岁开始每年将 1980 元用于参加个人养老金计划，到您 60 岁退休时：</p>
-                    <div class="calculation-box"><div class="row">
-                        <span class="item">累计投入本金</span>
-                        <span class="operator">+</span>
-                        <span class="item">累计投资收益</span>
-                        <span class="operator">=</span>
-                        <span class="item">账户累计金额</span>
-                      </div>
-                      <div class="row">
-                        <span class="item value">10,000.00</span>
-                        <span class="operator"></span>
-                        <span class="item value">1,265.95</span>
-                        <span class="operator"></span>
-                        <span class="item value">11,265.95</span>
-                      </div>
+                    <p>根据您自行设置的条件，按投资年化收益率 <span id="rate-of-return-1">4%</span> 计算得出从 <span id="age-1">30</span> 岁开始每年将 <span id="investment-1">1980</span> 元用于参加个人养老金计划，到您 <span id="retirement-age-2">60</span> 岁退休时：</p>
+                    <div class="calculation-box">
+                        <div class="row">
+                            <span class="item">累计投入本金</span>
+                            <span class="operator">+</span>
+                            <span class="item">累计投资收益</span>
+                            <span class="operator">=</span>
+                            <span class="item">账户累计金额</span>
+                        </div>
+                        <div class="row">
+                            <span class="item value" id="total-investment">0.00</span>
+                            <span class="operator"></span>
+                            <span class="item value" id="total-return">0.00</span>
+                            <span class="operator"></span>
+                            <span class="item value" id="total-amount">0.00</span>
+                        </div>
                     </div>
                     <div class="line-below">
-                        <p>退休后一次性领取养老金，按照 3% 税率纳税，最终到手 4,200.77 * (1 - 3%) = 4,074.74
+                        <p>退休后一次性领取养老金，按照 3% 税率纳税，最终到手 <span id="total-amount-2">0.00</span> * (1 - 3%) = <span id="after-tax-amount-2">0.00</span>
                         </p>
                     </div>
-                    <p>可节省个税按最高税率 10% 计算得出</p>
-                    <p>缴纳当年可节省个税 <span class="highlight-end">198.00</span></p>
-                    <p>累计可节省个税 <span class="highlight-end">269.98</span></p>
+                    <p>可节省个税按最高税率 <span id="tax-rate-1">10%</span> 计算得出</p>
+                    <p>缴纳当年可节省个税 <span class="highlight-end" id="yearly-tax-saving">0.00</span></p>
+                    <p>累计可节省个税 <span class="highlight-end" id="total-tax-saving-2">0.00</span></p>
                 </div>
             </div>
 
@@ -69,7 +70,7 @@
                         <img src="./img/不参加计划.png" alt="不参加计划图标" class="icon">
                         <div class="text">
                             <h3>不参加个人养老金计划</h3>
-                            <p>到您 60 岁退休时</p>
+                            <p>到您 <span id="retirement-age-3">60</span> 岁退休时</p>
                         </div>
                     </div>
                     <div class="result">
@@ -77,28 +78,28 @@
                             <div class="label-item"><span>最终到手金额</span></div>
                         </div>
                         <div class="values">
-                            <div class="value-item"><span>3,780.69</span></div>
+                            <div class="value-item"><span id="total-after-tax-amount">0.00</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="card-details lm">
-                    <p>根据您自行设置的条件，如果不存入个人养老金账户，因您当前年收入共 5958 元，当前最高税率为 10%，则 1980 元扣税后的本金为: 1980 * (1 - 10%) = 1,782.00 元。</p>
-                    <p>从 58 岁开始每年将这笔资产用于投资普通公募基金，按投资年化收益率 4% 计算得出，等到您 60 岁退休时:</p>
-                    <div class="calculation-box2"><div class="row2">
-                        <span class="item2">累计投入本金</span>
-                        <span class="operator2">+</span>
-                        <span class="item2">累计投资收益</span>
-                        <span class="operator2">=</span>
-                        <span class="item2">账户累计金额</span>
-                      </div>
-                      <div class="row2">
-                        <span class="item value2">3,564.00</span>
-                        <span class="operator2"></span>
-                        <span class="item value2">216.69 </span>
-                        <span class="operator2"></span>
-                        <span class="item value2"> 3,780.695</span>
-                      </div>
-                    
+                    <p>根据您自行设置的条件，如果不存入个人养老金账户，因您当前年收入共 <span id="income">0</span> 元，当前最高税率为 <span id="tax-rate-2">10%</span>，则 <span id="investment-2">0</span> 元扣税后的本金为: <span id="investment-3">0</span> * (1 - <span id="tax-rate-3">10%</span>) = <span id="after-tax-investment">0.00</span> 元。</p>
+                    <p>从 <span id="age-2">30</span> 岁开始每年将这笔资产用于投资普通公募基金，按投资年化收益率 <span id="rate-of-return-2">4%</span> 计算得出，等到您 <span id="retirement-age-4">60</span> 岁退休时:</p>
+                    <div class="calculation-box2">
+                        <div class="row2">
+                            <span class="item2">累计投入本金</span>
+                            <span class="operator2">+</span>
+                            <span class="item2">累计投资收益</span>
+                            <span class="operator2">=</span>
+                            <span class="item2">账户累计金额</span>
+                        </div>
+                        <div class="row2">
+                            <span class="item value2" id="total-after-tax-investment">0.00</span>
+                            <span class="operator2"></span>
+                            <span class="item value2" id="total-after-tax-return">0.00</span>
+                            <span class="operator2"></span>
+                            <span class="item value2" id="total-after-tax-amount-2">0.00</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +113,81 @@
         </div>
 
         <!-- 按钮 -->
-        <button class="calculate-button">重新计算</button>
+        <button class="calculate-button" onclick="window.location.href='ylj.html'">重新计算</button>
     </div>
+
+    <script>
+        // 页面加载时从URL参数获取计算结果
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = new URLSearchParams(window.location.search);
+            
+            // 获取基本参数
+            const age = params.get('age') || '30';
+            const retirementAge = params.get('retirementAge') || '60';
+            const income = params.get('income') || '0';
+            const taxRate = params.get('taxRate') || '0.1';
+            const investment = params.get('investment') || '0';
+            const rateOfReturn = params.get('rateOfReturn') || '0.04';
+            
+            // 获取计算结果
+            const totalInvestment = params.get('totalInvestment') || '0.00';
+            const totalReturn = params.get('totalReturn') || '0.00';
+            const totalAmount = params.get('totalAmount') || '0.00';
+            const afterTaxAmount = params.get('afterTaxAmount') || '0.00';
+            const yearlyTaxSaving = params.get('yearlyTaxSaving') || '0.00';
+            const totalTaxSaving = params.get('totalTaxSaving') || '0.00';
+            const afterTaxInvestment = params.get('afterTaxInvestment') || '0.00';
+            const totalAfterTaxInvestment = params.get('totalAfterTaxInvestment') || '0.00';
+            const totalAfterTaxReturn = params.get('totalAfterTaxReturn') || '0.00';
+            const totalAfterTaxAmount = params.get('totalAfterTaxAmount') || '0.00';
+            
+            // 格式化数字显示
+            function formatNumber(num) {
+                return parseFloat(num).toLocaleString('zh-CN', {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2
+                });
+            }
+            
+            // 更新页面上的所有动态数据
+            // 参加计划部分
+            document.getElementById('retirement-age-1').textContent = retirementAge;
+            document.getElementById('retirement-age-2').textContent = retirementAge;
+            document.getElementById('age-1').textContent = age;
+            document.getElementById('investment-1').textContent = formatNumber(investment);
+            document.getElementById('rate-of-return-1').textContent = (rateOfReturn * 100) + '%';
+            
+            document.getElementById('total-tax-saving').textContent = formatNumber(totalTaxSaving);
+            document.getElementById('after-tax-amount').textContent = formatNumber(afterTaxAmount);
+            
+            document.getElementById('total-investment').textContent = formatNumber(totalInvestment);
+            document.getElementById('total-return').textContent = formatNumber(totalReturn);
+            document.getElementById('total-amount').textContent = formatNumber(totalAmount);
+            
+            document.getElementById('total-amount-2').textContent = formatNumber(totalAmount);
+            document.getElementById('after-tax-amount-2').textContent = formatNumber(afterTaxAmount);
+            
+            document.getElementById('tax-rate-1').textContent = (taxRate * 100) + '%';
+            document.getElementById('yearly-tax-saving').textContent = formatNumber(yearlyTaxSaving);
+            document.getElementById('total-tax-saving-2').textContent = formatNumber(totalTaxSaving);
+            
+            // 不参加计划部分
+            document.getElementById('retirement-age-3').textContent = retirementAge;
+            document.getElementById('retirement-age-4').textContent = retirementAge;
+            document.getElementById('age-2').textContent = age;
+            document.getElementById('income').textContent = formatNumber(income);
+            document.getElementById('tax-rate-2').textContent = (taxRate * 100) + '%';
+            document.getElementById('tax-rate-3').textContent = (taxRate * 100) + '%';
+            document.getElementById('investment-2').textContent = formatNumber(investment);
+            document.getElementById('investment-3').textContent = formatNumber(investment);
+            document.getElementById('after-tax-investment').textContent = formatNumber(afterTaxInvestment);
+            document.getElementById('rate-of-return-2').textContent = (rateOfReturn * 100) + '%';
+            
+            document.getElementById('total-after-tax-amount').textContent = formatNumber(totalAfterTaxAmount);
+            document.getElementById('total-after-tax-investment').textContent = formatNumber(totalAfterTaxInvestment);
+            document.getElementById('total-after-tax-return').textContent = formatNumber(totalAfterTaxReturn);
+            document.getElementById('total-after-tax-amount-2').textContent = formatNumber(totalAfterTaxAmount);
+        });
+    </script>
 </body>
 </html>
