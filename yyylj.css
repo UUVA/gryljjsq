@@ -10,7 +10,7 @@ body {
     /* display: flex; */
     margin: 0 auto;
     max-width: 1220px;
-    padding: 20px;
+    padding: 12px;
 
 }
 
@@ -39,7 +39,7 @@ h2 {
     justify-content: space-between;
     align-items: stretch; /* 让子元素高度一致 */
    
-    margin-top: 95px;
+    margin-top: 58px;
     flex-wrap: wrap;
 }
 
@@ -216,8 +216,14 @@ h2 {
     margin-bottom: 12px; /* 横线与下方内容之间的间距 */
 }
 
-.line-below p {
+.line-below .p {
     margin: 0; /* 移除段落的默认外边距，避免额外间距 */
+}
+
+.line-below .span{
+    color: #007bff;
+    width: 64.27px;
+    height: 24px;
 }
 
 /* 将数字放置在行末 */
@@ -225,7 +231,7 @@ h2 {
     display: flex;
     justify-content: space-between; /* 文字和数字分布在两端 */
     align-items: center; /* 垂直居中对齐 */
-    margin: 5px 0; /* 段落间距 */
+    margin: 18px 0; /* 段落间距 */
 }
 
 .highlight-end {
