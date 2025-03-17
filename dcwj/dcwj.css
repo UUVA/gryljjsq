@@ -1,0 +1,252 @@
+       
+       
+        body {
+            margin-top: 260px;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url("./img/background_1.png");
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 1003px;
+            margin: 0 auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 表头样式 */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        
+        .logo-container {
+            display: flex;
+            /* align-items: left; */
+            margin-top: 61px;
+            margin-left: 45px;
+            width: 170px;
+        }
+        
+        .logo1 {
+            height: 86px;
+            /* width: ; */
+            /* margin-right: 0px; */
+        }
+        
+        .text-container {
+            text-align: center;
+            margin-top: -82px;
+            margin-left: -29px;
+            /* margin-right: 0px; */
+        }
+        
+        .chinese-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 5px;
+            margin-right: 248px;
+        }
+        
+        .text-container h1 {
+            /* margin-top: 10px; */
+            margin-left: -300px;
+            font-weight: 450;
+            font-size: 28px;
+        }
+        
+        .english-text {
+            width: 781px;
+            font-size: 18px;
+            color: black;
+            font-style: italic;
+            margin-bottom: 25px;
+            /* margin-right: 10px */
+        }
+
+        .description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .tips {
+            font-size: 16px;
+            font-weight: 430;
+            margin-bottom: 15px;
+            margin-left: 50px;
+        }
+
+        /* 表单整体样式 */
+        .survey-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            font-size: 14px;
+            line-height: 26px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            margin-left: 55px;
+            /* border-bottom: 1px solid #eee; */
+            color:  rgba(35, 120, 255, 1);
+        }
+
+        /* 问题样式 */
+        .question {
+            margin-bottom: 25px;
+            width: 857px;
+        }
+
+        .num {
+            font-size: 21px;
+            font-family: "楷体";
+        }
+
+        label {
+            font-size: 20px;
+            margin-left: 36px;
+            font-weight: 200;
+            font-family: "黑体";
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .required {
+            color: #e60012;
+            font-weight: 100;
+        }
+
+        /* 输入框样式 */
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+            margin-left: 55px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+        /* 单选按钮样式 */
+        .radio-group {
+            margin-left: 18px;
+        }
+    
+        .radio-group label {
+            display: block; /* 每个选项独占一行 */
+            width: 857px;
+            font-size: 16px;
+            font-weight: 100;
+            margin-bottom: 10px; /* 添加底部间距 */
+            padding: 10px; /* 添加内边距 */
+            border: 1px solid #eeeded; /* 添加灰色边框 */
+            border-radius: 5px; /* 添加圆角边框 */
+            cursor: pointer; /* 鼠标悬停时显示为手型 */
+            transition: all 0.3s; /* 平滑过渡效果 */
+            background-color: #fcfdfe; /* 默认背景颜色 */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+        }
+        
+        .radio-group label:hover {
+            border-color: #88bcf4; /* 鼠标悬停时的边框颜色 */
+            background-color: #e9f2ff; /* 鼠标悬停时的背景颜色 */
+            box-shadow: 0 2px 5px rgba(0, 123, 255, 0.1); /* 鼠标悬停时的阴影效果 */
+        }
+    
+        .radio-group input[type="radio"]:checked + label {
+            border-color: #007bff; /* 选中时的边框颜色 */
+            background-color: #70a4ed; /* 选中时的背景颜色 */
+            box-shadow: 0 2px 5px rgba(39, 111, 188, 0.988); 
+            /* 选中时的阴影效果 */
+        }
+    
+        .radio-group input[type="radio"] {
+            margin-right: 10px; /* 单选按钮与文字的间距 */
+            accent-color: #007bff; /* 设置选中时的单选按钮颜色 */
+        }
+
+        .radio-group input[type="radio"]:checked + label span {
+            color: white;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        } 
+
+        .question-title {
+            margin-left: 55px;
+            font-size: 14px;
+            font-weight: 500;
+            width: 885px;
+        }
+
+        .calculate-button {
+
+        }
+
+        /* 响应式设计
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            /* h2 {
+                font-size: 18px;
+            } */
+
+            /* h3 {
+                font-size: 16px;
+            }
+
+            .question {
+                margin-bottom: 20px;
+            }
+        } */
+
+        /* @media (max-width: 480px) {
+            .logo {
+                height: 40px;
+            }
+
+            h1 {
+                font-size: 18px;
+            } */
+
+            /* h2 {
+                font-size: 16px;
+            } */
+
+            /* h3 {
+                font-size: 15px;
+            }
+
+            .radio-group {
+                margin-left: 15px;
+            } */
+        

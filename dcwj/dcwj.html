@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投资者风险识别与承受能力调查</title>
+    <link rel="stylesheet" href="dcwj.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="./img/logo.png" alt="三亚学院" class="logo1">
+            </div>
+            <div class="text-container">
+                <div class="chinese-text">盛宝金融科技商学院</div>
+                <div class="english-text">Saxo Fintech Business School</div>
+                <h1>投资者风险识别与承受能力调查问卷</h1>
+            </div>
+            <!-- <h2>投资者风险识别与承受能力调查</h2> -->
+            <h6 class="tips">温馨提示：根据中基协规定，私募基金管理人应当向合格投资者募集，特设本调查问卷，请您如实填写，谢谢您的支持与配合。</h6>
+            
+        </header>
+
+        <form class="survey-form">
+            <section class="section">
+                <h3>一、基本信息</h3>
+                
+                <div class="question">
+                    <label for="name"> <span class="required">*</span> <span class="num">01</span> 您的姓名是？</label>
+                    <input type="text" id="name" name="name" placeholder="请输入中文" required>
+                </div>
+
+                <div class="question">
+                    <label for="phone"><span class="required">*</span> <span class="num">02</span> 您的手机号码？ </label>
+                    <input type="tel" id="phone" name="phone" placeholder="请输入手机号码限大陆地区" required>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">03</span> 您的年龄介于？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="age" value="a"> A、18-30岁</label>
+                        <label><input type="radio" name="age" value="b"> B、31-50岁</label>
+                        <label><input type="radio" name="age" value="c"> C、51-65岁</label>
+                        <label><input type="radio" name="age" value="d"> D、高于65岁</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">04</span> 您的学历？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="education" value="a"> A、高中及以下</label>
+                        <label><input type="radio" name="education" value="b"> B、大专或本科</label>
+                        <label><input type="radio" name="education" value="c"> C、硕士</label>
+                        <label><input type="radio" name="education" value="d"> D、博士及以上</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">05</span> 您的行业是？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="occupation" value="a"> A、金融行业</label>
+                        <label><input type="radio" name="occupation" value="b"> B、教育/学术界</label>
+                        <label><input type="radio" name="occupation" value="c"> C、政府/事业单位</label>
+                        <label><input type="radio" name="occupation" value="d"> D、其他行业</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>二、财务状况</h3>
+                
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">06</span> 在您每年的家庭可支配收入中，可用于金融投资（储蓄存款除外）的比例为？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-ratio" value="a"> A、70%以上</label>
+                        <label><input type="radio" name="investment-ratio" value="b"> B、50%-70%</label>
+                        <label><input type="radio" name="investment-ratio" value="c"> C、30%-50%</label>
+                        <label><input type="radio" name="investment-ratio" value="d"> D、10%-30%</label>
+                        <label><input type="radio" name="investment-ratio" value="e"> E、10%以下</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">07</span> 您的家庭年可支配收入为（折合人民币）？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="annual-income" value="a"> A、不超过10万</label>
+                        <label><input type="radio" name="annual-income" value="b"> B、10万（含）-50万元</label>
+                        <label><input type="radio" name="annual-income" value="c"> C、50万（含）-500万元</label>
+                        <label><input type="radio" name="annual-income" value="d"> D、500万元（含）-1000万元</label>
+                        <label><input type="radio" name="annual-income" value="e"> E、1000万元以上</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>三、投资知识</h3>
+                
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">08</span> 您的证券投资知识可描述为？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-knowledge" value="a"> A、熟练：对基本的投资工具有丰富的知识和理解</label>
+                        <label><input type="radio" name="investment-knowledge" value="b"> B、一般：对基本的投资工具及其风险收益特性有基本的了解</label>
+                        <label><input type="radio" name="investment-knowledge" value="c"> C、新手：对基本的投资工具及其风险收益特性了解较少</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>四、投资经验</h3>
+                
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">09</span> 您的证券投资经验可描述为？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-experience" value="a"> A、很丰富，有5年以上证券市场投资经验</label>
+                        <label><input type="radio" name="investment-experience" value="b"> B、较为丰富，有2-5年证券市场投资经验</label>
+                        <label><input type="radio" name="investment-experience" value="c"> C、一般，有1-2年证券市场投资经验</label>
+                        <label><input type="radio" name="investment-experience" value="d"> D、没有证券市场投资经验</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">10</span> 您是否有投资股票、基金、债券、期货、期权、外汇等投资产品的经验？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-history" value="a"> A、有，超过5年</label>
+                        <label><input type="radio" name="investment-history" value="b"> B、有，2-5年</label>
+                        <label><input type="radio" name="investment-history" value="c"> C、有，1-2年</label>
+                        <label><input type="radio" name="investment-history" value="d"> D、没有</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>五、投资目标</h3>
+                
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">11</span> 您计划的投资期限是多久？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-horizon" value="a"> A、短期：1年以内</label>
+                        <label><input type="radio" name="investment-horizon" value="b"> B、中期：1-3年</label>
+                        <label><input type="radio" name="investment-horizon" value="c"> C、中长期：3-5年</label>
+                        <label><input type="radio" name="investment-horizon" value="d"> D、长期：5年以上</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">12</span> 您的投资目标是？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="investment-goal" value="a"> A、保值增值</label>
+                        <label><input type="radio" name="investment-goal" value="b"> B、资产稳健增长</label>
+                        <label><input type="radio" name="investment-goal" value="c"> C、资产快速增值</label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h3>六、风险偏好</h3>
+                
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">13</span> 以下哪项描述最符合您的投资态度？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="risk-tolerance" value="a"> A、非常保守，不希望本金有任何损失，希望获得稳定回报</label>
+                        <label><input type="radio" name="risk-tolerance" value="b"> B、倾向保守，不希望本金损失，愿意承受一定程度的收益波动</label>
+                        <label><input type="radio" name="risk-tolerance" value="c"> C、中等风险承受能力，愿意承受一定的本金损失以换取更高的收益</label>
+                        <label><input type="radio" name="risk-tolerance" value="d"> D、倾向积极，愿意承受较大的本金损失以换取高收益</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <label><span class="required">*</span> <span class="num">14</span> 假设有两种投资：投资A预期获得5%的收益，可能承担的损失非常小；投资B预期获得15%的收益，但可能承担的损失较大。您会怎么选择您的投资？</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="risk-scenario" value="a"> A、选择A</label>
+                        <label><input type="radio" name="risk-scenario" value="b"> B、选择B</label>
+                        <label><input type="radio" name="risk-scenario" value="c"> C、选择A和B各一半</label>
+                    </div>
+                </div>
+                <div class="question-title">
+                    <p>注：1．投资者应确认在进行问卷调查时，所填写的选项表达真实。2．调查问卷为指导公司了解投资者风险认知水平和风险承受能力提供参考。本次调查在任何方面均不构成对投资者的投资建议，或对投资者的投资决策形成
+                        实质影响。若投资者根据调查结果进行投资，完全属于投资者的独立行为，相应的风险亦由投资者独立承担。</p>
+                </div>
+                </div>
+                <button class="calculate-button" onclick="calculate()">提交</button>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
