@@ -1,7 +1,6 @@
-       
-       
         body {
-            margin-top: 260px;
+            margin-top: 210px;
+            /* margin: 10px; */
             font-family: 'Microsoft YaHei', Arial, sans-serif;
             line-height: 1.6;
             color: #333;
@@ -10,11 +9,11 @@
 
         /* 容器样式 */
         .container {
-            max-width: 1003px;
+            max-width: 943px;
             margin: 0 auto;
-            padding: 25px;
+            padding: 11px;
             background-color: white;
-            border-radius: 8px;
+            /* border-radius: 8px; */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -26,50 +25,71 @@
             padding: 20px;
             background-color: #f0f2f5;
         }
+
+        /* .logo-container, .text-container, .title-container {
+            margin-right: 20px; 
+        } */
         
         .logo-container {
             display: flex;
             /* align-items: left; */
-            margin-top: 61px;
-            margin-left: 45px;
-            width: 170px;
+            margin-top: 52px;
+            margin-left: 53px;
+            margin-right: 0;
+            width: 477px;
         }
         
         .logo1 {
-            height: 86px;
-            /* width: ; */
+            height: 98px;
+            width: 200px;
             /* margin-right: 0px; */
         }
         
         .text-container {
             text-align: center;
             margin-top: -82px;
-            margin-left: -29px;
+            width: 520px;
+            /* margin-left: -29px; */
             /* margin-right: 0px; */
         }
         
         .chinese-text {
-            font-size: 24px;
-            font-weight: bold;
+            font-size: 27px;
+            /* font-weight: bold; */
             color: black;
+            width: 253px;
+            margin-top: 0px;
+            /* font-family: "宋体"; */
+            color: #007bff;
             margin-bottom: 5px;
-            margin-right: 248px;
+            margin-left: 246px;
         }
         
-        .text-container h1 {
+        .title-dc {
             /* margin-top: 10px; */
-            margin-left: -300px;
+            margin-right: 29px;
+            /* width: 396px; */
+            margin-top: -84px;
+            text-align: right;
             font-weight: 450;
-            font-size: 28px;
+            font-size: 29px;
+        }
+
+        .title-wj {
+            text-align: center;
+            margin-top: 22px;
+            font-weight: 450;
+            font-size: 30px;
         }
         
         .english-text {
-            width: 781px;
+            width: 465px;
             font-size: 18px;
-            color: black;
+            /* font-family: "宋体"; */
+            color: #007bff;
             font-style: italic;
             margin-bottom: 25px;
-            /* margin-right: 10px */
+            margin-left: 141px
         }
 
         .description {
@@ -79,10 +99,14 @@
         }
 
         .tips {
-            font-size: 16px;
-            font-weight: 430;
+            /* font-size: 18px; */
+            margin-top: 50px;
+            font-size: 15px;
+            /* font-weight: 430; */
+
+            font-family: "雅黑";
             margin-bottom: 15px;
-            margin-left: 50px;
+            margin-left: 98px;
         }
 
         /* 表单整体样式 */
@@ -100,7 +124,9 @@
             line-height: 26px;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            margin-left: 55px;
+            margin-left: 100px;
+            font-family: "黑体";
+            /* font-weight: 400; */
             /* border-bottom: 1px solid #eee; */
             color:  rgba(35, 120, 255, 1);
         }
@@ -117,13 +143,13 @@
         }
 
         label {
-            font-size: 20px;
-            margin-left: 36px;
-            font-weight: 200;
-            font-family: "黑体";
+            font-size: 17px;
+            margin-left: 100px;
+            /* font-weight: 200; */
+            /* font-family: "黑体"; */
             display: block;
             margin-bottom: 8px;
-            font-weight: bold;
+            /* font-weight: bold; */
         }
 
         .required {
@@ -134,12 +160,12 @@
         /* 输入框样式 */
         input[type="text"],
         input[type="tel"] {
-            width: 100%;
+            width: 86%;
             padding: 13px;
             border: 1px solid #ddd;
             border-radius: 6px;
             font-size: 13px;
-            margin-left: 55px;
+            margin-left: 117px;
             transition: border-color 0.3s ease;
         }
 
@@ -156,7 +182,7 @@
     
         .radio-group label {
             display: block; /* 每个选项独占一行 */
-            width: 857px;
+            width: 743px;
             font-size: 16px;
             font-weight: 100;
             margin-bottom: 10px; /* 添加底部间距 */
@@ -196,14 +222,30 @@
         } 
 
         .question-title {
-            margin-left: 55px;
+            position: relative;
+            font-weight: normal;
+            word-break: break-word;
+            position: relative;
+            font-weight: normal;
+            word-break: break-word;
+            margin-left: 120px; 
             font-size: 14px;
-            font-weight: 500;
-            width: 885px;
+            /* font-weight: 500; */
+            width: 772px;
+            font-size: 14px;
         }
+        
 
         .calculate-button {
-
+            width: 210px;
+            height: 42px;
+            color: white;
+            background-color: #007bff;
+            margin-top: 30px;
+            text-align: center; 
+            margin-left:384px;
+            border-radius: 6px;
+            border: 1px solid #007bff;
         }
 
         /* 响应式设计
