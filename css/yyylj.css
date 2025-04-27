@@ -77,12 +77,12 @@ p {
 }
 
 .pp {
-    background-image: url("./img/背景_参加计划.png");
+    background-image: url("../img/背景_参加计划.png");
     color: white;
 }
 
 .lk {
-    background-image: url("./img/背景_不参加计划.png");
+    background-image: url("../img/背景_不参加计划.png");
     color: black;
 }
 
